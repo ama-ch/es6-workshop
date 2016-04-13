@@ -1,0 +1,26 @@
+{
+  "name": "es6-workshop",
+  "version": "1.0.0",
+  "description": "ES6 workshop with ESLint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ama-ch/es6-workshop.git"
+  },
+  "author": "ama-ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ama-ch/es6-workshop/issues"
+  },
+  "homepage": "https://github.com/ama-ch/es6-workshop#readme",
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^0.6.2",
+    "eslint-plugin-react": "^4.3.0"
+  }
+}
