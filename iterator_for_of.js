@@ -1,5 +1,5 @@
 const max = +process.argv[2];
-let FizzBuzz = {
+const FizzBuzz = {
   [Symbol.iterator]() {
     let num = 1;
     return {
@@ -16,12 +16,12 @@ let FizzBuzz = {
           value = 'Buzz';
         }
         num++;
-        return { done: false, value: value };
-      }
-    }
-  }
-}
+        return { done: false, value };
+      },
+    };
+  },
+};
 
-for (var n of FizzBuzz) {
+for (const n of FizzBuzz) {
   console.log(n);
 }

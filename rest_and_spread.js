@@ -1,15 +1,15 @@
-var rawArgs = process.argv.slice(2);
-var args = [];
+const rawArgs = process.argv.slice(2);
+const args = [];
 
-rawArgs.forEach(val => {
-  let commaSep = val.split(',');
+rawArgs.forEach(arg => {
+  const commaSep = arg.split(',');
   commaSep.forEach(val => {
-    if(val !== '') args.push(+val);
+    if (val !== '') args.push(+val);
   });
 });
 
-function avg(...args){
-  return args.reduce((a, b)=>a+b)/args.length;
+function avg(...values) {
+  return values.reduce((a, b) => a + b) / values.length;
 }
 
 console.log(avg(...args));

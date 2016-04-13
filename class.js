@@ -11,12 +11,12 @@ class Character {
     return this.health_;
   }
   toString() {
-    return "x: " + this.x + " y: " + this.y + " health: " + this.health_;
+    return `x: ${this.x} y: ${this.y} health: ${this.health_}`;
   }
 }
 
-var x = process.argv[2];
-var y = process.argv[3];
-var character = new Character(+x, +y);
+const x = process.argv[2];
+const y = process.argv[3];
+const character = new Character(+x, +y);
 character.damage();
 console.log(character.toString());

@@ -1,5 +1,5 @@
 const max = process.argv[2];
-let FizzBuzz = function* (){
+const FizzBuzz = (function* () {
   let num = 1;
   while (num <= max) {
     let value = num;
@@ -13,8 +13,8 @@ let FizzBuzz = function* (){
     }
     yield value;
   }
-}();
+}());
 
-for (var n of FizzBuzz) {
+for (const n of FizzBuzz) {
   console.log(n);
 }
