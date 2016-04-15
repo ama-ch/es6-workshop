@@ -23,6 +23,7 @@ $ npm install -g npm
 ```bash
 $ git clone https://github.com/ama-ch/es6-workshop.git
 $ cd es6-workshop
+$ npm install
 ```
 
 ## ワークショップ
